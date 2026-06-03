@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* {{PRIMARY_COLOR}} {{SECONDARY_COLOR}} {{ACCENT_COLOR}} — edit in data/site.ts */
+  --primary: #0047ff;
+  --secondary: #ffffff;
+  --accent: #3b7fff;
+  --bg: #030b1f;
+  --surface: #0a1638;
+  --text: #f0f4ff;
+}
+
+.light {
+  --bg: #f5f8ff;
+  --surface: #ffffff;
+  --text: #0a1638;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+@layer utilities {
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-card;
+  }
+
+  .glass-card-light {
+    @apply rounded-2xl border border-white/20 bg-white shadow-card;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    background-color: var(--primary);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-6 py-3 text-sm font-semibold backdrop-blur transition hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    color: var(--text);
+  }
+
+  .light .btn-secondary {
+    border-color: color-mix(in srgb, var(--primary) 20%, transparent);
+    background-color: color-mix(in srgb, var(--primary) 5%, transparent);
+  }
+
+  .light .btn-secondary:hover {
+    background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+  }
+
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-24;
+  }
+}
