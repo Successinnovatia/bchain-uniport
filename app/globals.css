@@ -27,6 +27,10 @@ body {
   color: var(--text);
 }
 
+#hero{
+  padding-top: 6rem;
+}
+
 @layer utilities {
   .glass-card {
     @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-card;
@@ -37,7 +41,7 @@ body {
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
+    @apply items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2;
     background-color: var(--primary);
   }
 
@@ -56,6 +60,7 @@ body {
   }
 
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-20 sm:py-24;
+    @apply px-4 sm:px-6 lg:px-8 py-8 sm:py-10
+    ;
   }
 }

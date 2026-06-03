@@ -15,7 +15,7 @@ export function Footer() {
               alt={`${SITE.name} logo`}
               width={160}
               height={48}
-              className="h-10 w-auto brightness-0 invert"
+              className="h-10 w-auto"
             />
             <p className="mt-4 max-w-xs text-sm text-foreground/65 leading-relaxed">
               {SITE.description}

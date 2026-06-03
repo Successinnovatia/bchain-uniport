@@ -68,7 +68,7 @@ export function Navbar() {
             {isLight ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
           </button>
 
-          <Link href="#contact" className="btn-primary hidden sm:inline-flex text-sm py-2.5 px-4">
+          <Link href="#contact" className="hidden btn-primary sm:inline-flex text-sm py-2.5 px-4">
             Join Us
           </Link>
 

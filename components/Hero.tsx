@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-16 section-padding"
+      className="relative min-h-screen flex items-center overflow-hidden section-padding pt-24"
     >
       <div className="pointer-events-none absolute inset-0 bg-hero-gradient" />
       <div
