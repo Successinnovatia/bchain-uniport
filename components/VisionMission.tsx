@@ -37,7 +37,7 @@ function StatementCard({
 
 export function VisionMission() {
   return (
-    <section id="vision-mission" className="section-padding">
+    <section className="section-padding">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
           eyebrow="Our Purpose"

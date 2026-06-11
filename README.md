@@ -1,6 +1,6 @@
 # Blockchain Uniport Website
 
-Modern one-page website for **Blockchain Uniport** (University of Port Harcourt) — built with Next.js 14, TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
+Multi-page community website for **Blockchain Uniport** (University of Port Harcourt) — built with Next.js 14, TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
 
 ## Quick Start
 
@@ -11,65 +11,71 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
-## Scripts
+## Pages
 
-| Command         | Description              |
-| --------------- | ------------------------ |
-| `npm run dev`   | Start development server |
-| `npm run build` | Production build         |
-| `npm run start` | Run production server    |
-| `npm run lint`  | Run ESLint               |
+| Route | Description |
+| ----- | ----------- |
+| `/` | Home — hero, community preview, stats, testimonials, next workshop |
+| `/about` | Community story, vision & mission, founder profile, values, stats |
+| `/workshops` | Upcoming and past workshops/events with images |
+| `/community` | Testimonials, photo gallery, partners, social links |
+| `/contact` | Join form and contact details |
 
 ## Edit Content & Branding
 
-| What to change        | File                          |
-| --------------------- | ----------------------------- |
-| Mission & vision text | `data/site.ts`                |
-| Brand colors          | `data/site.ts` → `BRAND_COLORS` |
-| Programs, events, etc.| `data/site.ts`                |
-| Logo                  | `public/images/logo.png`      |
-| Hero image            | `public/images/mission-card.png` |
-| Global CSS variables  | `app/globals.css`             |
+All content lives in [`data/site.ts`](data/site.ts):
+
+| Content | Constant |
+| ------- | -------- |
+| Mission & vision | `MISSION_STATEMENT`, `VISION_STATEMENT` |
+| Founder details | `FOUNDER` |
+| Community story & stats | `COMMUNITY` |
+| Workshops & events | `WORKSHOPS` |
+| Testimonials | `TESTIMONIALS` |
+| Gallery photos | `GALLERY` |
+| Brand colors | `BRAND_COLORS` |
+| Navigation | `NAV_LINKS` |
+
+## Image Assets
+
+Replace placeholder files in `public/images/`:
+
+```
+public/images/
+  logo.png
+  mission-card.png
+  founder/placeholder.svg      → swap for founder photo
+  testimonials/member-*.svg    → member headshots
+  workshops/workshop-*.svg     → workshop cover images
+  gallery/photo-*.svg          → event/community photos
+```
+
+After replacing images, update the matching paths in `data/site.ts`.
 
 ## Project Structure
 
 ```
 app/
-  layout.tsx          # Root layout, fonts, metadata
-  page.tsx            # Landing page (all sections)
-  globals.css         # Theme variables & utilities
-components/
-  Navbar.tsx
-  Hero.tsx
-  About.tsx
-  VisionMission.tsx
-  Programs.tsx
-  Resources.tsx
-  Events.tsx
-  CommunityPartners.tsx
-  ContactForm.tsx
-  Footer.tsx
-  SectionHeading.tsx
-  Reveal.tsx
+  layout.tsx
+  (site)/
+    layout.tsx          # Navbar, Footer, Telegram CTA
+    page.tsx            # Home
+    about/page.tsx
+    workshops/page.tsx
+    community/page.tsx
+    contact/page.tsx
+components/             # Reusable UI components
 data/
-  site.ts             # All site content & constants
-hooks/
-  useActiveSection.ts # Active nav link on scroll
-public/
-  images/
-    logo.png
-    mission-card.png
+  site.ts               # All site content
+  metadata.ts           # Page title helper
+public/images/          # Logos, photos, placeholders
 ```
 
-## Sections
+## Scripts
 
-1. Navbar (sticky, mobile menu, theme toggle)
-2. Hero
-3. About
-4. Vision & Mission
-5. Programs
-6. Resources
-7. Events
-8. Community & Partners
-9. Contact / Join Form
-10. Footer
+| Command | Description |
+| ------- | ----------- |
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
+| `npm run start` | Run production server |
+| `npm run lint` | Run ESLint |

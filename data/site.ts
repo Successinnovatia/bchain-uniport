@@ -19,13 +19,10 @@ We are determined to build a community force of well informed students who are e
 export const VISION_STATEMENT = `To become the leading student blockchain community at the University of Port Harcourt — empowering every student with practical knowledge, confidence, and opportunities in cryptocurrencies and blockchain technology.`;
 
 export const NAV_LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#vision-mission", label: "Vision & Mission" },
-  { href: "#programs", label: "Programs" },
-  { href: "#resources", label: "Resources" },
-  { href: "#events", label: "Events" },
-  { href: "#community", label: "Community" },
-  { href: "#contact", label: "Contact" },
+  { href: "/about", label: "About" },
+  { href: "/workshops", label: "Workshops" },
+  { href: "/community", label: "Community" },
+  { href: "/contact", label: "Contact" },
 ] as const;
 
 export const SOCIAL_LINKS = [
@@ -56,98 +53,192 @@ export const SOCIAL_LINKS = [
   },
 ] as const;
 
-export const PROGRAMS = [
-  {
-    title: "Workshops",
-    description:
-      "Hands-on sessions covering blockchain fundamentals, wallets, smart contracts, and real-world use cases.",
-    icon: "workshop" as const,
-  },
-  {
-    title: "Campus Events",
-    description:
-      "Meetups, hackathons, and speaker sessions that connect students with industry builders and innovators.",
-    icon: "events" as const,
-  },
-  {
-    title: "Mentorship",
-    description:
-      "Guidance from experienced members to help you grow from beginner to confident blockchain contributor.",
-    icon: "mentorship" as const,
-  },
-  {
-    title: "Developer & Community",
-    description:
-      "Collaborate on projects, join study groups, and access opportunities in the wider Web3 ecosystem.",
-    icon: "community" as const,
-  },
-] as const;
+export const FOUNDER = {
+  name: "{{FOUNDER_NAME}}",
+  role: "Founder, Blockchain Uniport",
+  bio: `{{FOUNDER_NAME}} founded Blockchain Uniport with a vision to make blockchain and cryptocurrency education accessible to every student at the University of Port Harcourt.
 
-export const RESOURCES = [
-  {
-    title: "Blockchain 101 Guide",
-    description: "Core concepts: blocks, consensus, wallets, and security basics.",
-    tag: "Beginner",
+With a passion for technology and community building, they lead workshops, mentor members, and connect students to real opportunities in the Web3 ecosystem.`,
+  quote:
+    "Our goal is simple: every student should leave campus with the confidence to understand and participate in the future of technology.",
+  image: "/images/founder/placeholder.svg",
+  social: {
+    twitter: "https://x.com/BchainUniport",
+    linkedin: "https://linkedin.com/",
+    email: "mailto:blockchainuniport@gmail.com",
   },
-  {
-    title: "Crypto Fundamentals Track",
-    description: "Understand tokens, DeFi basics, and responsible participation.",
-    tag: "Learning Track",
-  },
-  {
-    title: "Developer Starter Path",
-    description: "Introduction to smart contracts and building on-chain apps.",
-    tag: "Learning Track",
-  },
-  {
-    title: "Curated Links Hub",
-    description: "Trusted docs, tools, and community resources — updated regularly.",
-    tag: "Curated",
-  },
-] as const;
+} as const;
 
-export const EVENTS = [
+export const COMMUNITY = {
+  story: `Blockchain Uniport started as a small group of curious students who wanted to learn about cryptocurrencies and blockchain beyond the headlines. What began as informal study sessions has grown into a vibrant campus community — hosting workshops, meetups, and mentorship programs that welcome students from every faculty.
+
+We believe blockchain education should be practical, collaborative, and open to everyone. Whether you're completely new or already building, there's a place for you here.`,
+  foundedYear: "2024",
+  stats: [
+    { label: "Active Members", value: "100+" },
+    { label: "Workshops Held", value: "15+" },
+    { label: "Campus Events", value: "10+" },
+    { label: "Partner Projects", value: "5+" },
+  ],
+  values: [
+    {
+      title: "Education First",
+      description:
+        "We break down complex blockchain concepts into clear, practical lessons anyone can follow.",
+    },
+    {
+      title: "Inclusive Community",
+      description:
+        "No prior experience needed. Beginners and builders learn side by side.",
+    },
+    {
+      title: "Hands-On Learning",
+      description:
+        "Workshops, hackathons, and real projects — not just theory.",
+    },
+    {
+      title: "Future-Ready",
+      description:
+        "Equip students with skills and networks for careers in Web3 and beyond.",
+    },
+  ],
+} as const;
+
+export type WorkshopItem = {
+  slug: string;
+  title: string;
+  date: string;
+  location: string;
+  description: string;
+  image: string;
+  type: "workshop" | "event";
+  status: "upcoming" | "past";
+};
+
+export const WORKSHOPS: WorkshopItem[] = [
   {
-    date: "Mar 15, 2026",
+    slug: "intro-to-blockchain",
     title: "Intro to Blockchain Workshop",
+    date: "Mar 15, 2026",
     location: "University of Port Harcourt",
+    description:
+      "A beginner-friendly session covering blockchain fundamentals, wallets, and how to get started safely.",
+    image: "/images/workshops/intro-to-blockchain.jpg",
+    type: "workshop",
+    status: "upcoming",
   },
   {
-    date: "Apr 02, 2026",
+    slug: "web3-career-panel",
     title: "Web3 Career Panel",
+    date: "Apr 02, 2026",
     location: "Campus Auditorium",
+    description:
+      "Industry speakers share career paths, internship tips, and how to break into the blockchain space.",
+    image: "/images/workshops/web3-career-panel.jpg",
+    type: "event",
+    status: "upcoming",
   },
   {
-    date: "Apr 20, 2026",
+    slug: "campus-hackathon-kickoff",
     title: "Campus Hackathon Kickoff",
+    date: "Apr 20, 2026",
     location: "Innovation Hub",
+    description:
+      "Launch event for our campus hackathon — form teams, pick challenges, and start building.",
+    image: "/images/workshops/campus-hackathon.jpg",
+    type: "event",
+    status: "upcoming",
   },
-] as const;
+  {
+    slug: "smart-contracts-101",
+    title: "Smart Contracts 101",
+    date: "Nov 12, 2025",
+    location: "CS Department Lab",
+    description:
+      "Hands-on introduction to writing and deploying your first smart contract.",
+    image: "/images/workshops/smart-contracts.jpg",
+    type: "workshop",
+    status: "past",
+  },
+  {
+    slug: "defi-deep-dive",
+    title: "DeFi Deep Dive",
+    date: "Oct 05, 2025",
+    location: "Student Union Building",
+    description:
+      "Explored decentralized finance protocols, yield farming basics, and risk management.",
+    image: "/images/workshops/defi-deep-dive.jpg",
+    type: "workshop",
+    status: "past",
+  },
+];
 
 export const TESTIMONIALS = [
   {
     quote:
       "Blockchain Uniport made complex topics easy to understand. I finally feel confident exploring Web3.",
-    author: "Student Member",
+    author: "Ada O.",
     role: "Computer Science",
+    image: "/images/testimonials/testimonial-img-1.jpg",
   },
   {
     quote:
       "The workshops and community support helped me land my first blockchain internship.",
-    author: "Community Member",
-    role: "Engineering",
+    author: "Chidi M.",
+    role: "Electrical Engineering",
+    image: "/images/testimonials/testimonial-img-2.jpg",
   },
   {
     quote:
       "A welcoming space for beginners and builders alike. Highly recommend joining.",
-    author: "Workshop Participant",
+    author: "Blessing A.",
     role: "Business Administration",
+    image: "/images/testimonials/testimonial-img-3.jpg",
+  },
+] as const;
+
+export const GALLERY = [
+  {
+    src: "/images/gallery/intro-workshop.jpg",
+    alt: "Students at a blockchain workshop",
+    caption: "Intro to Blockchain Workshop",
+  },
+  {
+    src: "/images/gallery/community-meetup.jpg",
+    alt: "Community meetup group photo",
+    caption: "Community Meetup",
+  },
+  {
+    src: "/images/gallery/campus-hackathon.jpg",
+    alt: "Hackathon team collaborating",
+    caption: "Campus Hackathon",
+  },
+  {
+    src: "/images/gallery/web3-career-panel.jpg",
+    alt: "Speaker session on Web3 careers",
+    caption: "Web3 Career Panel",
   },
 ] as const;
 
 export const PARTNERS = [
-  "Partner 1",
-  "Partner 2",
-  "Partner 3",
-  "Partner 4",
+  {
+    name: "Google",
+    logo: "/images/partners/google.svg",
+    href: "https://google.com",
+  },
+  {
+    name: "Microsoft",
+    logo: "/images/partners/microsoft.svg",
+    href: "https://microsoft.com",
+  },
+  {
+    name: "Ethereum",
+    logo: "/images/partners/ethereum.svg",
+    href: "https://ethereum.org",
+  },
+  {
+    name: "Binance",
+    logo: "/images/partners/binance.svg",
+    href: "https://binance.com",
+  },
 ] as const;
