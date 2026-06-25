@@ -53,21 +53,50 @@ export const SOCIAL_LINKS = [
   },
 ] as const;
 
-export const FOUNDER = {
-  name: "{{FOUNDER_NAME}}",
-  role: "Founder, Blockchain Uniport",
-  bio: `{{FOUNDER_NAME}} founded Blockchain Uniport with a vision to make blockchain and cryptocurrency education accessible to every student at the University of Port Harcourt.
+export type Leader = {
+  name: string;
+  role: string;
+  bio: string;
+  quote: string;
+  image: string;
+  social: {
+    twitter: string;
+    linkedin: string;
+    email: string;
+  };
+};
 
-With a passion for technology and community building, they lead workshops, mentor members, and connect students to real opportunities in the Web3 ecosystem.`,
+export const FOUNDER: Leader = {
+  name: "Victor Aluka",
+  role: "Founder, Blockchain Uniport",
+  bio: `Victor Aluka founded Blockchain Uniport with a vision to make blockchain and cryptocurrency education accessible to every student at the University of Port Harcourt.
+
+With a passion for technology and community building, he leads workshops, mentors members, and connects students to real opportunities in the Web3 ecosystem.`,
   quote:
     "Our goal is simple: every student should leave campus with the confidence to understand and participate in the future of technology.",
-  image: "/images/founder/placeholder.svg",
+  image: "/images/founder/founder.png",
   social: {
     twitter: "https://x.com/BchainUniport",
     linkedin: "https://linkedin.com/",
     email: "mailto:blockchainuniport@gmail.com",
   },
-} as const;
+};
+
+export const COFOUNDER: Leader = {
+  name: "Tosin Ademakin",
+  role: "Co-Founder, Blockchain Uniport",
+  bio: `Tosin Ademakin co-founded Blockchain Uniport to help students understand blockchain, cybersecurity, and the technologies shaping the digital economy.
+
+He brings hands-on experience delivering technical workshops and presentations, guiding students through complex topics in a clear and practical way.`,
+  quote:
+    "Education is the bridge — when students understand the technology, they can build the future with confidence.",
+  image: "/images/founder/cofounder.png",
+  social: {
+    twitter: "https://x.com/BchainUniport",
+    linkedin: "https://linkedin.com/",
+    email: "mailto:blockchainuniport@gmail.com",
+  },
+};
 
 export const COMMUNITY = {
   story: `Blockchain Uniport started as a small group of curious students who wanted to learn about cryptocurrencies and blockchain beyond the headlines. What began as informal study sessions has grown into a vibrant campus community — hosting workshops, meetups, and mentorship programs that welcome students from every faculty.

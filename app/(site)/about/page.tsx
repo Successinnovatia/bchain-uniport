@@ -1,10 +1,10 @@
-import { FounderProfile } from "@/components/FounderProfile";
+import { LeadershipProfile } from "@/components/LeadershipProfile";
 import { PageHeader } from "@/components/PageHeader";
 import { SectionHeading } from "@/components/SectionHeading";
 import { StatsGrid } from "@/components/StatsGrid";
 import { ValuesGrid } from "@/components/ValuesGrid";
 import { VisionMission } from "@/components/VisionMission";
-import { COMMUNITY } from "@/data/site";
+import { COFOUNDER, COMMUNITY, FOUNDER } from "@/data/site";
 import { pageMetadata } from "@/data/metadata";
 
 export const metadata = pageMetadata(
@@ -43,14 +43,17 @@ export default function AboutPage() {
 
       <VisionMission />
 
-      <section id="founder" className="section-padding">
+      <section id="leadership" className="section-padding">
         <div className="mx-auto max-w-6xl">
           <SectionHeading
             eyebrow="Leadership"
-            title="Meet Our Founder"
-            description="The person behind Blockchain Uniport's mission to empower students with blockchain knowledge."
+            title="Meet Our Founders"
+            description="The team behind Blockchain Uniport's mission to empower students with blockchain knowledge."
           />
-          <FounderProfile />
+          <LeadershipProfile leader={FOUNDER} priority />
+          <div className="mt-20">
+            <LeadershipProfile leader={COFOUNDER} reversed />
+          </div>
         </div>
       </section>
 
