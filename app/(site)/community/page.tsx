@@ -18,7 +18,7 @@ export default function CommunityPage() {
       <PageHeader
         eyebrow="Community"
         title="Our Community"
-        description="Stories, photos, and connections from students building the future of blockchain at Uniport."
+        description="Stories, photos, and connections from young people building the future of blockchain at Uniport."
       />
 
       <section className="section-padding pt-0">
@@ -26,7 +26,7 @@ export default function CommunityPage() {
           <SectionHeading
             eyebrow="Member Stories"
             title="Testimonials"
-            description="Hear from students who have grown with Blockchain Uniport."
+            description="Hear from young people who have grown with Blockchain Uniport."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {TESTIMONIALS.map((t, i) => (

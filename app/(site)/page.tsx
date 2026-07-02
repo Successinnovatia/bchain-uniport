@@ -23,7 +23,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Our Impact"
             title="Growing Together"
-            description="A thriving student community at the University of Port Harcourt."
+            description="A thriving community for young people at the University of Port Harcourt."
           />
           <StatsGrid />
         </div>
@@ -34,7 +34,7 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="Member Stories"
             title="What Our Community Says"
-            description="Hear from students who have grown with Blockchain Uniport."
+            description="Hear from young people who have grown with Blockchain Uniport."
           />
           <div className="grid gap-6 md:grid-cols-3">
             {featuredTestimonials.map((t, i) => (

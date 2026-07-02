@@ -2,7 +2,7 @@ export const SITE = {
   name: "Blockchain Uniport",
   tagline: "University of Port Harcourt",
   description:
-    "Bridging the gap between students and blockchain knowledge through education, community, and hands-on opportunities.",
+    "Bridging the gap between young people and blockchain knowledge through education, community, and hands-on opportunities.",
 } as const;
 
 /** Edit brand colors here — derived from logo (#0022FF / royal blue) */
@@ -12,11 +12,11 @@ export const BRAND_COLORS = {
   accent: "#3B7FFF",
 } as const;
 
-export const MISSION_STATEMENT = `Blockchain Uniport is committed to bridging the gap between the student community and their knowledge of Cryptocurrencies and Blockchain Technology in general.
+export const MISSION_STATEMENT = `Blockchain Uniport is committed to bridging the gap between young people and their knowledge of Cryptocurrencies and Blockchain Technology in general.
 
-We are determined to build a community force of well informed students who are equipped for the future of technology.`;
+We are determined to build a community of well-informed young people who are equipped for the future of technology.`;
 
-export const VISION_STATEMENT = `To become the leading student blockchain community at the University of Port Harcourt — empowering every student with practical knowledge, confidence, and opportunities in cryptocurrencies and blockchain technology.`;
+export const VISION_STATEMENT = `To become the leading blockchain community for young people at the University of Port Harcourt — empowering every young person with practical knowledge, confidence, and opportunities in cryptocurrencies and blockchain technology.`;
 
 export const NAV_LINKS = [
   { href: "/about", label: "About" },
@@ -69,11 +69,11 @@ export type Leader = {
 export const FOUNDER: Leader = {
   name: "Victor Aluka",
   role: "Founder, Blockchain Uniport",
-  bio: `Victor Aluka founded Blockchain Uniport with a vision to make blockchain and cryptocurrency education accessible to every student at the University of Port Harcourt.
+  bio: `Victor Aluka founded Blockchain Uniport with a vision to make blockchain and cryptocurrency education accessible to young people in and around the University of Port Harcourt.
 
-With a passion for technology and community building, he leads workshops, mentors members, and connects students to real opportunities in the Web3 ecosystem.`,
+With a passion for technology and community building, he leads workshops, mentors members, and connects young people to real opportunities in the Web3 ecosystem.`,
   quote:
-    "Our goal is simple: every student should leave campus with the confidence to understand and participate in the future of technology.",
+    "Our goal is simple: every young person should have the confidence to understand and participate in the future of technology.",
   image: "/images/founder/founder.png",
   social: {
     twitter: "https://x.com/BchainUniport",
@@ -85,11 +85,11 @@ With a passion for technology and community building, he leads workshops, mentor
 export const COFOUNDER: Leader = {
   name: "Tosin Ademakin",
   role: "Co-Founder, Blockchain Uniport",
-  bio: `Tosin Ademakin co-founded Blockchain Uniport to help students understand blockchain, cybersecurity, and the technologies shaping the digital economy.
+  bio: `Tosin Ademakin co-founded Blockchain Uniport to help young people understand blockchain, cybersecurity, and the technologies shaping the digital economy.
 
-He brings hands-on experience delivering technical workshops and presentations, guiding students through complex topics in a clear and practical way.`,
+He brings hands-on experience delivering technical workshops and presentations, guiding young people through complex topics in a clear and practical way.`,
   quote:
-    "Education is the bridge — when students understand the technology, they can build the future with confidence.",
+    "Education is the bridge — when young people understand the technology, they can build the future with confidence.",
   image: "/images/founder/cofounder.png",
   social: {
     twitter: "https://x.com/BchainUniport",
@@ -99,10 +99,10 @@ He brings hands-on experience delivering technical workshops and presentations, 
 };
 
 export const COMMUNITY = {
-  story: `Blockchain Uniport started as a small group of curious students who wanted to learn about cryptocurrencies and blockchain beyond the headlines. What began as informal study sessions has grown into a vibrant campus community — hosting workshops, meetups, and mentorship programs that welcome students from every faculty.
+  story: `Blockchain Uniport started as a small group of curious young people who wanted to learn about cryptocurrencies and blockchain beyond the headlines. What began as informal study sessions has grown into a vibrant community — hosting workshops, meetups, and mentorship programs that welcome young people from all walks of life.
 
 We believe blockchain education should be practical, collaborative, and open to everyone. Whether you're completely new or already building, there's a place for you here.`,
-  foundedYear: "2024",
+  foundedYear: "2023",
   stats: [
     { label: "Active Members", value: "100+" },
     { label: "Workshops Held", value: "15+" },
@@ -128,7 +128,7 @@ We believe blockchain education should be practical, collaborative, and open to 
     {
       title: "Future-Ready",
       description:
-        "Equip students with skills and networks for careers in Web3 and beyond.",
+        "Equip young people with skills and networks for careers in Web3 and beyond.",
     },
   ],
 } as const;
@@ -148,7 +148,7 @@ export const WORKSHOPS: WorkshopItem[] = [
   {
     slug: "intro-to-blockchain",
     title: "Intro to Blockchain Workshop",
-    date: "Mar 15, 2026",
+    date: "Mar 15, 2027",
     location: "University of Port Harcourt",
     description:
       "A beginner-friendly session covering blockchain fundamentals, wallets, and how to get started safely.",
@@ -159,7 +159,7 @@ export const WORKSHOPS: WorkshopItem[] = [
   {
     slug: "web3-career-panel",
     title: "Web3 Career Panel",
-    date: "Apr 02, 2026",
+    date: "Apr 02, 2027",
     location: "Campus Auditorium",
     description:
       "Industry speakers share career paths, internship tips, and how to break into the blockchain space.",
@@ -170,7 +170,7 @@ export const WORKSHOPS: WorkshopItem[] = [
   {
     slug: "campus-hackathon-kickoff",
     title: "Campus Hackathon Kickoff",
-    date: "Apr 20, 2026",
+    date: "Apr 20, 2027",
     location: "Innovation Hub",
     description:
       "Launch event for our campus hackathon — form teams, pick challenges, and start building.",
@@ -229,7 +229,7 @@ export const TESTIMONIALS = [
 export const GALLERY = [
   {
     src: "/images/gallery/intro-workshop.jpg",
-    alt: "Students at a blockchain workshop",
+    alt: "Young people at a blockchain workshop",
     caption: "Intro to Blockchain Workshop",
   },
   {

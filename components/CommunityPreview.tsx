@@ -16,7 +16,7 @@ export function CommunityPreview() {
                 Our Community
               </p>
               <h2 className="mt-3 text-2xl font-bold text-foreground sm:text-3xl">
-                A student force for blockchain education
+                A community for young people passionate about blockchain education
               </h2>
               <p className="mt-4 text-foreground/75 leading-relaxed">
                 {COMMUNITY.story.split("\n\n")[0]}

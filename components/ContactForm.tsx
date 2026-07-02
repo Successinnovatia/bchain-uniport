@@ -43,7 +43,7 @@ export function ContactForm() {
               type="email"
               required
               className="w-full rounded-xl border border-white/15 bg-background/50 px-4 py-3 text-foreground placeholder:text-foreground/40 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-              placeholder="you@student.uniport.edu.ng"
+              placeholder="you@email.com"
             />
           </div>
 

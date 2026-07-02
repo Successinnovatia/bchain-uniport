@@ -27,7 +27,7 @@ export function Hero() {
           </p>
 
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Bridging Students to{" "}
+            Bridging Young People to{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Blockchain Knowledge
             </span>

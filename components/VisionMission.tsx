@@ -42,7 +42,7 @@ export function VisionMission() {
         <SectionHeading
           eyebrow="Our Purpose"
           title="Vision & Mission"
-          description="The principles that guide everything we do for the student community."
+          description="The principles that guide everything we do for young people in our community."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">
