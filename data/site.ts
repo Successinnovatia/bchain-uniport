@@ -148,7 +148,7 @@ export const WORKSHOPS: WorkshopItem[] = [
   {
     slug: "intro-to-blockchain",
     title: "Intro to Blockchain Workshop",
-    date: "Mar 15, 2027",
+    date: "Sep 14, 2026",
     location: "University of Port Harcourt",
     description:
       "A beginner-friendly session covering blockchain fundamentals, wallets, and how to get started safely.",
@@ -159,7 +159,7 @@ export const WORKSHOPS: WorkshopItem[] = [
   {
     slug: "web3-career-panel",
     title: "Web3 Career Panel",
-    date: "Apr 02, 2027",
+    date: "Oct 24, 2026",
     location: "Campus Auditorium",
     description:
       "Industry speakers share career paths, internship tips, and how to break into the blockchain space.",
@@ -170,7 +170,7 @@ export const WORKSHOPS: WorkshopItem[] = [
   {
     slug: "campus-hackathon-kickoff",
     title: "Campus Hackathon Kickoff",
-    date: "Apr 20, 2027",
+    date: "Dec 06, 2026",
     location: "Innovation Hub",
     description:
       "Launch event for our campus hackathon — form teams, pick challenges, and start building.",
