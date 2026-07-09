@@ -18,7 +18,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Us"
         title="Our Community"
-        description="Blockchain Uniport is a youth-focused blockchain community rooted at the University of Port Harcourt."
+        description="Blockchain Uniport is a blockchain community for students and young people, rooted at the University of Port Harcourt."
       />
 
       <section className="section-padding pt-0">
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Leadership"
             title="Meet Our Founders"
-            description="The team behind Blockchain Uniport's mission to empower young people with blockchain knowledge."
+            description="The team behind Blockchain Uniport's mission to empower students and young people with blockchain knowledge."
           />
           <LeadershipProfile leader={FOUNDER} priority />
           <div className="mt-20">

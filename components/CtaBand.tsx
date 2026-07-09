@@ -11,7 +11,7 @@ type CtaBandProps = {
 
 export function CtaBand({
   title = "Ready to join the community?",
-  description = "Connect with young people, attend workshops, and grow your blockchain knowledge.",
+  description = "Connect with students and young people, attend workshops, and grow your blockchain knowledge.",
 }: CtaBandProps) {
   return (
     <section className="section-padding">
